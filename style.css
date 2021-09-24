@@ -52,6 +52,7 @@ body {
   margin: auto;
   text-align: center;
   background-color: aquamarine;
+  max-width: 600px;
 }
 
 label {
@@ -59,6 +60,25 @@ label {
   padding: 1rem;
   font-weight: 600;
 }
+
+/* .question-container {
+  text-align: left;
+  padding: 0.5rem;
+} */
+
+.question-container label {
+  display: inline;
+}
+
+.section {
+  padding: 0.5rem;
+}
+
+/* .triangle {
+  text-align: left;
+  background-color: white;   
+  color: black;
+} */
 
 input {
   padding: 0.5rem;
