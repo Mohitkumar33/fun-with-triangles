@@ -13,13 +13,20 @@ function calculation(a, b) {
 }
 
 function checkHypotenuse() {
-  var ans = calculation(Number(sides[0].value), Number(sides[1].value));
+  var a = Number(sides[0].value);
+  var b = Number(sides[1].value)
+  if(a>0 && b>0){
+  var ans = calculation(a, b);
   if (ans > 0) {
     output.style.display = "block";
     output.innerText = "The length of hypotenuse is " + ans;
   } else {
     output.style.display = "block";
     output.innerText = "please enter the valid sides";
+  }}
+  else{
+    output.style.display = "block";
+    output.innerText = "please enter the valid length of sides";
   }
 }
 
